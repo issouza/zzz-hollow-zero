@@ -53,6 +53,7 @@ export function prefsFromPreset(name) {
     categoryWeights: { ...zeroCats(), ...p.cats },
     rarityA: 1.7,
     gearBonus: 20,
+    magnitude: false,
     conditionalFactor: 0.8,
     carryValue: 0,
     refreshLadder: [...DEFAULT_REFRESH_LADDER],

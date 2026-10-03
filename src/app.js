@@ -1,5 +1,5 @@
 import { SEED_RESONIA } from './resonia-db.js';
-import { TAGS, tagsFor, matchCard } from './tagger.js';
+import { TAGS, tagsFor, matchCard, magnitudesFor } from './tagger.js';
 import { CATEGORIES } from './ocr-core.js';
 import { PRESETS, prefsFromPreset } from './presets.js';
 import { planPath, scoreCard } from './optimizer.js';
@@ -103,6 +103,8 @@ function renderPrefs() {
       ${slider('conditionalFactor', 'Conditional effects ×', prefs.conditionalFactor, { max: 1, step: 0.05, tip: 'Discount for effects that only apply sometimes ("when…", "upon…", "for 10s"). 1 = as good as an always-on stat.' })}
       ${slider('carryValue', 'Leftover coins (pts / 1000)', prefs.carryValue, { max: 10, step: 0.5, tip: 'What unspent coins are worth when you leave the shop. 0 = spend everything here; raise it to save coins for a later shop in the run.' })}
       ${slider('gearBonus', 'Gear set bonus (pts)', prefs.gearBonus ?? 20, { max: 50, step: 1, tip: 'Your gear grants a bonus for every 2 resonia of its category you carry. This is what each completed pair is worth, compared with card scores (a strong A card is about 10). 0 ignores gear.' })}
+      <div class="field toggle"><label><input type="checkbox" id="magnitude" ${prefs.magnitude ? 'checked' : ''}> Magnitude-aware scoring <span class="beta">beta</span></label>
+        ${info('Reads the numbers in each effect and compares them to a typical B-rank card (CRIT Rate 12%, CRIT DMG 30%, DMG 15%, ATK 270, Daze 10%…). "CRIT DMG +60%" then counts x2 and "+6% CRIT Rate" x0.5, capped between x0.4 and x3. Replaces the A-rank multiplier for stats with a readable number. Multipliers show on the stat chips.')}</div>
       <div class="field"><span>Refresh price ladder ${info('Refresh prices assumed for pages beyond your last screenshot, in order. The last value repeats. Observed: 50, 100, 200, then 300 each time.')}</span>
         <input type="text" id="ladder" value="${prefs.refreshLadder.join(', ')}" aria-label="Refresh price ladder"></div>`),
   ].join('') + '<button class="btn" id="reset-prefs">Reset to preset</button>';
@@ -133,7 +135,9 @@ $('#prefs').addEventListener('input', (e) => {
 });
 $('#prefs').addEventListener('change', (e) => {
   if (e.target.id === 'preset' && PRESETS[e.target.value]) {
-    prefs = { ...prefsFromPreset(e.target.value), carryValue: prefs.carryValue, refreshLadder: prefs.refreshLadder, overrides: prefs.overrides, rarityA: prefs.rarityA, conditionalFactor: prefs.conditionalFactor, gearBonus: prefs.gearBonus };
+    prefs = { ...prefsFromPreset(e.target.value), carryValue: prefs.carryValue, refreshLadder: prefs.refreshLadder, overrides: prefs.overrides, rarityA: prefs.rarityA, conditionalFactor: prefs.conditionalFactor, gearBonus: prefs.gearBonus, magnitude: prefs.magnitude };
+  } else if (e.target.id === 'magnitude') {
+    prefs.magnitude = e.target.checked;
   } else if (e.target.id === 'ladder') {
     const ladder = e.target.value.split(/[,\s]+/).map(Number).filter((n) => n > 0);
     if (ladder.length) prefs.refreshLadder = ladder;
@@ -225,6 +229,17 @@ function gearLine(steps, g) {
   return `<br>Gear: <b>${esc(g.category)}</b>${src} — ${result}`;
 }
 
+// Stat chips; with magnitude-aware scoring on, each shows its multiplier.
+function statChips(card, tags) {
+  const mags = prefs.magnitude ? magnitudesFor(card) : {};
+  return tags.map((t) => {
+    const m = mags[t];
+    const hot = (prefs.tagWeights[t] ?? 0) >= 3 ? 'hot' : '';
+    const title = m ? ` title="${m.value}${m.unit === 'pct' ? '%' : ''} vs a typical B card: x${m.factor.toFixed(2)}"` : '';
+    return `<span class="chip ${hot}"${title}>${esc(TAG_LABEL[t])}${m ? ` <b class="mag">x${m.factor.toFixed(1)}</b>` : ''}</span>`;
+  }).join('');
+}
+
 function cardHtml(card, slot, score, buy) {
   if (!card) {
     return `<div class="card empty" data-slot="${slot}"><input class="name" list="db-names" placeholder="Card name…" data-field="name"></div>`;
@@ -237,7 +252,7 @@ function cardHtml(card, slot, score, buy) {
     <input class="name" list="db-names" value="${esc(card.name)}" data-field="name" title="${esc(card.effect)}">
     ${card.known ? '' : '<div class="unknown">Not in database <button class="mini-btn" data-act="learn">save</button></div>'}
     <p class="effect">${esc(card.effect)}</p>
-    <div class="chips">${lastPath.isGear(card) ? '<span class="chip gear" title="Counts toward your gear\'s 2-card set bonus">Gear set</span>' : ''}${tags.map((t) => `<span class="chip ${(prefs.tagWeights[t] ?? 0) >= 3 ? 'hot' : ''}">${esc(TAG_LABEL[t])}</span>`).join('')}</div>
+    <div class="chips">${lastPath.isGear(card) ? '<span class="chip gear" title="Counts toward your gear\'s 2-card set bonus">Gear set</span>' : ''}${statChips(card, tags)}</div>
     <div class="card-row"><label><input type="number" step="50" min="0" value="${card.price ?? ''}" data-field="price"></label>
       <span class="score">${fmt(score)}<span class="muted" style="font-size:11px"> pts</span></span></div>
   </div>`;
@@ -441,7 +456,7 @@ function renderDb() {
       <td><select class="cell" data-edit="rarity" aria-label="Rank">${options(['A', 'B', 'S'], c.rarity)}</select></td>
       <td class="num"><input class="cell price-cell" type="number" step="50" min="50" data-edit="price" value="${c.price}" aria-label="Price"></td>
       <td class="eff"><textarea class="cell eff-cell ${isCut(c) ? 'cut' : ''}" data-edit="effect" rows="2" aria-label="Effect">${esc(c.effect)}</textarea></td>
-      <td><div class="chips">${tags.map((t) => `<span class="chip ${(prefs.tagWeights[t] ?? 0) >= 3 ? 'hot' : ''}">${esc(TAG_LABEL[t])}</span>`).join('')}</div></td>
+      <td><div class="chips">${statChips(c, tags)}</div></td>
       <td class="num">${fmt(score)}</td><td class="num">${fmt(ratio)}</td>
       <td><select data-ovr="${esc(c.name)}">${[['', '—'], ['must', 'Always'], ['skip', 'Never']].map(([v, l]) => `<option value="${v}" ${(prefs.overrides[c.name] || '') === v ? 'selected' : ''}>${l}</option>`).join('')}</select></td>
     </tr>`).join('')}</tbody>`;

@@ -2,7 +2,7 @@
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
 import { SEED_RESONIA } from '../src/resonia-db.js';
-import { matchCard, tagsFor } from '../src/tagger.js';
+import { matchCard, tagsFor, magnitudesFor } from '../src/tagger.js';
 import { planPath, scoreCard } from '../src/optimizer.js';
 import { prefsFromPreset } from '../src/presets.js';
 import { timeFromName, byShotTime } from '../src/shot-time.js';
@@ -42,6 +42,23 @@ assert.ok(!tagsFor(byName['Total Eradication']).includes('def'), 'enemy DEF igno
 assert.deepEqual(tagsFor({ effect: 'Increases Agent DEF by 20%.' }), ['def']);
 assert.ok(tagsFor({ effect: 'Maim DMG and Laceration DMG increase by 25%.' }).includes('laceration'));
 assert.ok(tagsFor(byName['Quick-Heat Hot Pot']).includes('energy'), 'Sharpness counts as a resource');
+
+// 2a. Magnitudes read from effect text.
+const mag = (effect) => Object.fromEntries(Object.entries(magnitudesFor({ effect })).map(([t, m]) => [t, m.value]));
+assert.deepEqual(mag('Increases Agent CRIT Rate by 12%.'), { critRate: 12 });
+assert.deepEqual(mag('Agents ignore 20% of enemy DEF.'), { pen: 20 });
+assert.deepEqual(mag('Shielded Agents deal 30% more DMG to enemies within 6m.'), { dmg: 30 }, 'Shielded is a condition');
+assert.deepEqual(mag('Increases Agent DMG dealt to Stunned enemies by 45%.'), { dmg: 45 }, 'Stunned is a condition');
+assert.deepEqual(mag('Dodge Counter DMG increases by 30% and Daze inflicted increases by 15%.'), { dmg: 30, daze: 15 });
+assert.deepEqual(mag("Increases the Agent's DMG by 5% for 30s, stacking up to 5 times."), { dmg: 25 });
+assert.deepEqual(mag('Gain 3 stacks of Enhancement. Each stack grants the Agent bonus 16% CRIT DMG.'), { critDmg: 48 });
+assert.deepEqual(mag('DMG increases by 37.5% when Agent HP drops below 70%.'), { dmg: 37.5 }, 'thresholds are not amounts');
+// Toggle off: identical to the rank-based score; on: amounts decide.
+const claret = prefsFromPreset('Armorer (Claret)');
+const magOn = { ...claret, magnitude: true };
+assert.equal(scoreCard(byName['Total Eradication'], claret).toFixed(6), (1.7 * (3 + 1)).toFixed(6));
+assert.ok(scoreCard(byName['Total Eradication'], magOn) > scoreCard(byName['Like Subscribe Gun'], magOn) * 1000 / 600,
+  '20% DEF ignore beats +6% CRIT Rate per coin once amounts count');
 
 // 2b. Screenshot ordering by filename timestamp.
 const t = (n) => timeFromName(n);

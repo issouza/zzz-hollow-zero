@@ -13,7 +13,7 @@ npm run db:format  # re-sorts src/resonia-db.js after manual edits
 ## Using it
 
 1. Choose a **build preset** (Crit DPS, Armorer (Claret), Anomaly, Stun, Rupture, Support, Survival, Balanced). Then adjust the stat sliders and the resonium category focus. Cards that score 0 for your priorities are grayed out.
-2. Add the shop **pages in order**: page 1 is the shop you open, page 2 is what you see after the 1st refresh, and so on. Paste screenshots one at a time with Ctrl+V, or drop or choose many at once (files are sorted by name). Starting coins and each page's refresh price come from the screenshots. Everything is editable.
+2. Add the shop **pages in order**: page 1 is the shop you open, page 2 is what you see after the 1st refresh, and so on. Paste screenshots one at a time with Ctrl+V, or drop or choose many at once. Pages are ordered by the time in the screenshot filename (or the file date), so batches can be added in any order. Starting coins and each page's refresh price come from the screenshots. Everything is editable.
 3. Read the **Best path**, e.g. *Page 1: buy #1 → Page 2: skip → Page 3: buy #1 → Page 4: skip → Page 5: buy #1 #2 #5 → Stop*. Each page shows its verdict, its coins before and after, and BUY badges on the cards to take.
 
 **Gear:** the category whose "Owned" counter is highlighted orange in the shop is your gear. It is detected automatically (with its owned count) and can be overridden next to the starting coins. Gear grants a set bonus for every 2 resonia of its category, so the planner tracks that count and adds the "Gear set bonus" value (Tuning) whenever a purchase completes a pair. General cards have no counter and never count.
@@ -23,6 +23,7 @@ npm run db:format  # re-sorts src/resonia-db.js after manual edits
 ## How it decides
 
 - **Card score:** each effect is tagged by keyword (CRIT Rate, DMG Bonus, Anomaly…). The tag you weight highest counts in full and any extra tags count at 35%. Conditional effects ("when…", "for 10s") count ×0.8. The category focus bonus is added, and the result is multiplied by rarity (A ×1.7, about its 1000-coin vs 600-coin price).
+- **Magnitude-aware scoring (beta, Tuning toggle):** reads the amount in each effect and compares it to a typical B-rank card (CRIT Rate 12%, CRIT DMG 30%, DMG 15%, ATK 270, Daze 10%… see `MAGNITUDE_REFS` in `src/tagger.js`). "CRIT DMG +60%" counts x2, "+6% CRIT Rate" x0.5, capped to x0.4–x3, replacing the A-rank multiplier for stats with a readable amount. Stacking effects count at full stacks.
 - **Path:** an exact dynamic program over (page, coins) through the known pages. On each page it chooses which combination to buy, then whether to pay that page's refresh price and continue or stop. Pages are assumed to be a fixed sequence, the same no matter what you bought.
 - **Past the last page** (optional checkbox): an expectimax over coins. For each set of cards you could buy now, it adds the expected value of the coins you keep. That expected value comes from simulating refreshes at the observed price ladder (50 → 100 → 200 → 300, then 300 each time), each giving 5 random cards from the database, with the best choice made at every step. Leftover coins are worth nothing by default, so it spends everything. Raise "Leftover coins" to save for a later shop.
 

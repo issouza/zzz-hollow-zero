@@ -1,4 +1,4 @@
-import { tagsFor } from './tagger.js';
+import { tagsFor, magnitudesFor } from './tagger.js';
 
 export const UNIT = 50; // every price and refresh cost seen is a multiple of 50
 
@@ -10,12 +10,15 @@ export function scoreCard(card, prefs) {
   if (override === 'skip') return 0;
   // Diminishing returns: the best-matching stat counts fully, extra matches at 35%,
   // so effects that merely mention many keywords don't dominate.
-  const ws = tagsFor(card).map((t) => prefs.tagWeights[t] ?? 0).sort((a, b) => b - a);
+  const rarity = card.rarity === 'A' ? prefs.rarityA : card.rarity === 'S' ? prefs.rarityA * 1.3 : 1;
+  // Magnitude-aware (opt-in): a stat whose amount was read from the effect is
+  // scaled by amount / typical B-card amount instead of the flat rank multiplier.
+  const mags = prefs.magnitude ? magnitudesFor(card) : {};
+  const ws = tagsFor(card).map((t) => (prefs.tagWeights[t] ?? 0) * (mags[t]?.factor ?? rarity)).sort((a, b) => b - a);
   const tagValue = ws.length ? ws[0] + 0.35 * ws.slice(1).reduce((a, b) => a + b, 0) : 0;
   const cat = prefs.categoryWeights[card.category] ?? 0;
-  const rarity = card.rarity === 'A' ? prefs.rarityA : card.rarity === 'S' ? prefs.rarityA * 1.3 : 1;
   const cond = CONDITIONAL.test(card.effect || card.desc || '') ? (prefs.conditionalFactor ?? 0.8) : 1;
-  const score = rarity * (cond * tagValue + cat);
+  const score = cond * tagValue + rarity * cat;
   return override === 'must' ? score + 1000 : score;
 }
 
