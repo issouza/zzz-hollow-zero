@@ -1,0 +1,24 @@
+{
+  "name": "zzz-hollow-zero",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node scripts/test.mjs",
+    "start": "node scripts/serve.mjs",
+    "ocr": "node scripts/ocr-assets.mjs assets",
+    "db:format": "node scripts/db-format.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "httpsgithub.comissouzazzz-hollow-zero.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "pngjs": "^7.0.0",
+    "tesseract.js": "^7.0.0"
+  }
+}

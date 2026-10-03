@@ -1,0 +1,1342 @@
+[
+  {
+    "file": "Screenshot 2026-10-02 152530.png",
+    "coins": 5306,
+    "refreshCost": 50,
+    "cards": [
+      {
+        "slot": 0,
+        "titleRaw": "[ Attack: Eradication ] Total Eradication",
+        "category": "Attack",
+        "subtype": "Eradication",
+        "name": "Total Eradication",
+        "desc": "4 Agents ignore 20% of y 2nemy DEF.",
+        "price": 1000,
+        "rarity": "A",
+        "owned": 2,
+        "gear": false
+      },
+      {
+        "slot": 1,
+        "titleRaw": "[$tun: Knock] Power Impact Drill #",
+        "category": "Stun",
+        "subtype": "Knock",
+        "name": "Power Impact Drill",
+        "desc": "Upon Stun recovery, the enemy accumulates 10% Daze.",
+        "price": 600,
+        "rarity": "B",
+        "owned": 0,
+        "gear": false
+      },
+      {
+        "slot": 2,
+        "titleRaw": "[ Anomaly: Infliction] Nat Launcher",
+        "category": "Anomaly",
+        "subtype": "Infliction",
+        "name": "Nat Launcher",
+        "desc": "increases Agent Anomaly Mastery by 60.",
+        "price": 600,
+        "rarity": "B",
+        "owned": 0,
+        "gear": false
+      },
+      {
+        "slot": 3,
+        "titleRaw": "[Rupture: Activation] Champion's Proof",
+        "category": "Rupture",
+        "subtype": "Activation",
+        "name": "Champion's Proof",
+        "desc": "Increases Agent Max HP by 25%.",
+        "price": 600,
+        "rarity": "B",
+        "owned": 0,
+        "gear": false
+      },
+      {
+        "slot": 4,
+        "titleRaw": "[ General] BUG Shield",
+        "category": "General",
+        "subtype": null,
+        "name": "BUG Shield",
+        "desc": "When attacked, if tha Agent's HP is below 25%, a shield that is equal to 15% PE A",
+        "price": 600,
+        "rarity": "B",
+        "owned": null,
+        "gear": null
+      }
+    ]
+  },
+  {
+    "file": "Screenshot 2026-10-02 152549.png",
+    "coins": 5256,
+    "refreshCost": 100,
+    "cards": [
+      {
+        "slot": 0,
+        "titleRaw": "© [Anomaly Infliction ] Heavy l Flamethrower l",
+        "category": "Anomaly",
+        "subtype": "Infliction",
+        "name": "Heavy Flamethrower",
+        "desc": "\"Agent's Anomaly PEN ‘ Ratio increases by , 20% when attacking 1 an anamy suffering",
+        "price": 1000,
+        "rarity": "A",
+        "owned": 0,
+        "gear": false
+      },
+      {
+        "slot": 1,
+        "titleRaw": "[General] Water Gun",
+        "category": "General",
+        "subtype": null,
+        "name": "Water Gun",
+        "desc": "Landing a critical hit increases the Agent's CRIT DMG by 3% for 10s, stacking arms a 4% LIE ~~",
+        "price": 1000,
+        "rarity": "A",
+        "owned": null,
+        "gear": null
+      },
+      {
+        "slot": 2,
+        "titleRaw": "[General] Three Gloss Marbles",
+        "category": "General",
+        "subtype": null,
+        "name": "Three Gloss Marbles",
+        "desc": "Increases the duration that enemies are stunned for by 15%.",
+        "price": 1000,
+        "rarity": "A",
+        "owned": null,
+        "gear": null
+      },
+      {
+        "slot": 3,
+        "titleRaw": "[ General] General File",
+        "category": "General",
+        "subtype": null,
+        "name": "General File",
+        "desc": "Perfect Dodge is easier to trigger, and Dodge Counter DMG is increased by e—-s -",
+        "price": 1000,
+        "rarity": "A",
+        "owned": null,
+        "gear": null
+      },
+      {
+        "slot": 4,
+        "titleRaw": "[ Anomaly: Infliction] High-Voltage Stun Gun",
+        "category": "Anomaly",
+        "subtype": "Infliction",
+        "name": "High-Voltage Stun Gun",
+        "desc": "increases Agent Anomaly Proficiency by 45.",
+        "price": 600,
+        "rarity": "B",
+        "owned": null,
+        "gear": false
+      }
+    ]
+  },
+  {
+    "file": "Screenshot 2026-10-02 152625.png",
+    "coins": 5156,
+    "refreshCost": 200,
+    "cards": [
+      {
+        "slot": 0,
+        "titleRaw": "! [Attack: Eradication] Greataxe of Conquest",
+        "category": "Attack",
+        "subtype": "Eradication",
+        "name": "Greataxe of Conquest",
+        "desc": "\"l Upon entering combat, gain 3 , stacks of Enhancement. Each mmm = \"PP",
+        "price": 1000,
+        "rarity": "A",
+        "owned": 2,
+        "gear": false
+      },
+      {
+        "slot": 1,
+        "titleRaw": "[8tun: Knock] Portable Angle Grinder",
+        "category": "Attack",
+        "subtype": null,
+        "name": "[8tun: Knock] Portable Angle Grinder",
+        "desc": "Upon stunning an anamy, the whole squad recovers 5 Energy, 6 . or =",
+        "price": 1000,
+        "rarity": "A",
+        "owned": 0,
+        "gear": false
+      },
+      {
+        "slot": 2,
+        "titleRaw": "[Rupture: Activation] Offense-Defense Balance",
+        "category": "Rupture",
+        "subtype": "Activation",
+        "name": "Offense-Defense Balance",
+        "desc": "When launching EX Special Attack, the whole squad restores 4% HP. This mlm mth mem PE mm mm",
+        "price": 1000,
+        "rarity": "A",
+        "owned": 0,
+        "gear": false
+      },
+      {
+        "slot": 3,
+        "titleRaw": "# [$tun: Knock] Industrial Bs Explosive",
+        "category": "Stun",
+        "subtype": "Knock",
+        "name": "Industrial Bs Explosive",
+        "desc": "Agents inflict 10% more Daze.",
+        "price": 600,
+        "rarity": "B",
+        "owned": 0,
+        "gear": false
+      },
+      {
+        "slot": 4,
+        "titleRaw": "(Support: Saturation] Sugar-Free Chocolate",
+        "category": "Support",
+        "subtype": "Saturation",
+        "name": "Sugar-Free Chocolate",
+        "desc": "Increases Agent DMG dealt by 15%.",
+        "price": 600,
+        "rarity": "B",
+        "owned": null,
+        "gear": false
+      }
+    ]
+  },
+  {
+    "file": "Screenshot 2026-10-02 152640.png",
+    "coins": 4956,
+    "refreshCost": 300,
+    "cards": [
+      {
+        "slot": 0,
+        "titleRaw": "oH [ $tun: Knock] Mini Handsaw hp",
+        "category": "Stun",
+        "subtype": "Knock",
+        "name": "Mini Handsaw hp",
+        "desc": "\"Upon stunning an enemy, that enemy's y l Stun DMG Multiplier increases by 37.5%.",
+        "price": 1000,
+        "rarity": "A",
+        "owned": 0,
+        "gear": false
+      },
+      {
+        "slot": 1,
+        "titleRaw": "[ Stun: Knock] Multi-Function Circular Saw",
+        "category": "Stun",
+        "subtype": "Knock",
+        "name": "Multi-Function Circular Saw",
+        "desc": "Increases Agent DMG dealt to Stunned enemies by 45%.",
+        "price": 1000,
+        "rarity": "A",
+        "owned": 0,
+        "gear": false
+      },
+      {
+        "slot": 2,
+        "titleRaw": "[ General ] Bubble Gun",
+        "category": "General",
+        "subtype": null,
+        "name": "Bubble Gun",
+        "desc": "Landing a critical hit increases Daze inflicted by the Agent by 15% for 3s.",
+        "price": 1000,
+        "rarity": "A",
+        "owned": null,
+        "gear": null
+      },
+      {
+        "slot": 3,
+        "titleRaw": "[ General] Demolition Hommer",
+        "category": "General",
+        "subtype": null,
+        "name": "Demolition Hommer",
+        "desc": "Triggering a Perfect Assist increases all squad members’ Anomaly Buildup - - — an Pm",
+        "price": 1000,
+        "rarity": "A",
+        "owned": null,
+        "gear": null
+      },
+      {
+        "slot": 4,
+        "titleRaw": "[Support: Saturation] Starlight Lollipop",
+        "category": "Support",
+        "subtype": "Saturation",
+        "name": "Starlight Lollipop",
+        "desc": "Increases Decibel Generation Rate by 23%.",
+        "price": 600,
+        "rarity": "B",
+        "owned": 0,
+        "gear": false
+      }
+    ]
+  },
+  {
+    "file": "Screenshot 2026-10-02 152650.png",
+    "coins": 4656,
+    "refreshCost": 300,
+    "cards": [
+      {
+        "slot": 0,
+        "titleRaw": "[ General] Lucky Stars hp",
+        "category": "General",
+        "subtype": null,
+        "name": "Lucky Stars hp",
+        "desc": "\"Launching an EX Special Attack , increases the i Agent's DMG by 5% Femme Pm Ele fan a» wam",
+        "price": 1000,
+        "rarity": "A",
+        "owned": null,
+        "gear": null
+      },
+      {
+        "slot": 1,
+        "titleRaw": "[General] Vitra Sacrad Sword of Radiance",
+        "category": "General",
+        "subtype": null,
+        "name": "Vitra Sacrad Sword of Radiance",
+        "desc": "Shielded Agents deal + 30% more DMG to enemies within 6m.",
+        "price": 1000,
+        "rarity": "A",
+        "owned": null,
+        "gear": null
+      },
+      {
+        "slot": 2,
+        "titleRaw": "[ Support: Saturation] l Guick-Heat Hot Pot",
+        "category": "Support",
+        "subtype": "Saturation",
+        "name": "Guick-Heat Hot Pot",
+        "desc": "Energy, Adrenaline, and Sharpness Generation Rate increase by 18%.",
+        "price": 600,
+        "rarity": "B",
+        "owned": 0,
+        "gear": false
+      },
+      {
+        "slot": 3,
+        "titleRaw": "[Rupture: Activation] Locked and Loaded",
+        "category": "Rupture",
+        "subtype": "Activation",
+        "name": "Locked and Loaded",
+        "desc": "When HP is lost, Rupture Agents’ Sheer Force increases by 270 male TH on wn om mm TF =m fe mmr am",
+        "price": 600,
+        "rarity": "B",
+        "owned": 0,
+        "gear": false
+      },
+      {
+        "slot": 4,
+        "titleRaw": "[ General] Hammer Drill",
+        "category": "General",
+        "subtype": null,
+        "name": "Hammer Drill",
+        "desc": "Triggering Perfect Assist increases all : squad members’ CRIT DMG by 20% for rr. mm. wy",
+        "price": 600,
+        "rarity": "B",
+        "owned": null,
+        "gear": null
+      }
+    ]
+  },
+  {
+    "file": "Screenshot 2026-10-02 152701.png",
+    "coins": 4356,
+    "refreshCost": 300,
+    "cards": [
+      {
+        "slot": 0,
+        "titleRaw": "Ny [Support Saturation] Lucky Cookle",
+        "category": "Support",
+        "subtype": "Saturation",
+        "name": "Lucky Cookle",
+        "desc": "When an Agent 4 activates Ultimate, , the whole squad d recovers 17 Energy, _— oe. - —",
+        "price": 1000,
+        "rarity": "A",
+        "owned": 0,
+        "gear": false
+      },
+      {
+        "slot": 1,
+        "titleRaw": "[General] Plant Catalog",
+        "category": "General",
+        "subtype": null,
+        "name": "Plant Catalog",
+        "desc": "Off-field Agents with 25% or lower HP i slowly recover HP,",
+        "price": 1000,
+        "rarity": "A",
+        "owned": null,
+        "gear": null
+      },
+      {
+        "slot": 2,
+        "titleRaw": "[General] Like & Subscribe Gun",
+        "category": "General",
+        "subtype": null,
+        "name": "Like Subscribe Gun",
+        "desc": "Each non-critical hit increases the . Agent's CRIT Rate by i 6%. This effect is ran and mE AL",
+        "price": 600,
+        "rarity": "B",
+        "owned": null,
+        "gear": null
+      },
+      {
+        "slot": 3,
+        "titleRaw": "[ General] Untitled Book",
+        "category": "General",
+        "subtype": null,
+        "name": "Untitled Book",
+        "desc": "Dodge Counter DMG increases by 30% x and Daze inflicted i increases by 15%.",
+        "price": 600,
+        "rarity": "B",
+        "owned": null,
+        "gear": null
+      },
+      {
+        "slot": 4,
+        "titleRaw": "[General] Insect Catalog",
+        "category": "General",
+        "subtype": null,
+        "name": "Insect Catalog",
+        "desc": "Attacks against enemies with less = than 50% HP deal 15% i more DMG.",
+        "price": 600,
+        "rarity": "B",
+        "owned": null,
+        "gear": null
+      }
+    ]
+  },
+  {
+    "file": "Screenshot 2026-10-02 152713.png",
+    "coins": 4056,
+    "refreshCost": 300,
+    "cards": [
+      {
+        "slot": 0,
+        "titleRaw": "hl (Anomaly: Infliction] High-Strength Pepper Spray",
+        "category": "Anomaly",
+        "subtype": "Infliction",
+        "name": "High-Strength Pepper Spray",
+        "desc": "\"When an Attribute d Anomaly is , triggered, the whole 1 squad either -_ye—",
+        "price": 1000,
+        "rarity": "A",
+        "owned": 0,
+        "gear": false
+      },
+      {
+        "slot": 1,
+        "titleRaw": "[Support: Saturation] Nutritional Can Food",
+        "category": "Support",
+        "subtype": "Saturation",
+        "name": "Nutritional Can Food",
+        "desc": "Upon launching an EX Special Attack, the Agent deals 5% more DMG for 10s, mtr allrfema HE A. I",
+        "price": 1000,
+        "rarity": "A",
+        "owned": 0,
+        "gear": false
+      },
+      {
+        "slot": 2,
+        "titleRaw": "[Rupture: Activation l Heavy Hitter",
+        "category": "Rupture",
+        "subtype": null,
+        "name": "[Rupture: Activation Heavy Hitter",
+        "desc": "DMG increases by 37.5% when Agent HP drops below 70%.",
+        "price": 1000,
+        "rarity": "A",
+        "owned": 0,
+        "gear": false
+      },
+      {
+        "slot": 3,
+        "titleRaw": "= [Attack: Eradication] Cutting = Gale",
+        "category": "Attack",
+        "subtype": "Eradication",
+        "name": "Cutting Gale",
+        "desc": "Increases Agent ATK by 270.",
+        "price": 600,
+        "rarity": "B",
+        "owned": 2,
+        "gear": false
+      },
+      {
+        "slot": 4,
+        "titleRaw": "[Rupturs: Activation] Light of Foot",
+        "category": "Rupture",
+        "subtype": "Activation",
+        "name": "Light of Foot",
+        "desc": "Increases Agent CRIT DMG by 30% for 20s when losing HP. Repeated triggers tar a om di dae PE ee em Tn ma",
+        "price": 600,
+        "rarity": "B",
+        "owned": 0,
+        "gear": false
+      }
+    ]
+  },
+  {
+    "file": "Screenshot 2026-10-02 152722.png",
+    "coins": 3756,
+    "refreshCost": 300,
+    "cards": [
+      {
+        "slot": 0,
+        "titleRaw": "[General] Energy Restorer MKI hp",
+        "category": "General",
+        "subtype": null,
+        "name": "Energy Restorer MKI hp",
+        "desc": "'Nhen triggering Chain Attack, y Agents recover 5 Energy.",
+        "price": 1000,
+        "rarity": "A",
+        "owned": null,
+        "gear": null
+      },
+      {
+        "slot": 1,
+        "titleRaw": "[General] Falling Starsea Armor",
+        "category": "General",
+        "subtype": null,
+        "name": "Falling Starsea Armor",
+        "desc": "Hitting an enemy with an EX Special Attack generates a Shield equal to 10%",
+        "price": 1000,
+        "rarity": "A",
+        "owned": null,
+        "gear": null
+      },
+      {
+        "slot": 2,
+        "titleRaw": "[ Anomaly: Infliction] EMI Jammer",
+        "category": "Anomaly",
+        "subtype": "Infliction",
+        "name": "EMI Jammer",
+        "desc": "Agent Attribute Anomaly DMG and Disorder DMG increase by 18%.",
+        "price": 600,
+        "rarity": "B",
+        "owned": 0,
+        "gear": false
+      },
+      {
+        "slot": 3,
+        "titleRaw": "[Defsnzw: Battle Shiwld] Lightweight Bulletproof Armor",
+        "category": "Defense",
+        "subtype": "Battle Shiwld",
+        "name": "Lightweight Bulletproof Armor",
+        "desc": "When triggering Perfect Dodge, the Agent gains a shield equal to 3% of HP. PL al Barn TF om man",
+        "price": 600,
+        "rarity": "B",
+        "owned": 5,
+        "gear": true
+      },
+      {
+        "slot": 4,
+        "titleRaw": "[General] Energy Restorer MKII",
+        "category": "General",
+        "subtype": null,
+        "name": "Energy Restorer MKII",
+        "desc": "EX Special Attack DMG increases by 15% and Daze inflicted increases ame",
+        "price": 600,
+        "rarity": "B",
+        "owned": null,
+        "gear": null
+      }
+    ]
+  },
+  {
+    "file": "Screenshot 2026-10-02 152738.png",
+    "coins": 3456,
+    "refreshCost": 300,
+    "cards": [
+      {
+        "slot": 0,
+        "titleRaw": "ny h [Support: Saturation] Energy Drink",
+        "category": "Support",
+        "subtype": "Saturation",
+        "name": "Energy Drink",
+        "desc": "\"EX Special Attack < DMG increases by , 44%, and Ultimate l DMG increases by",
+        "price": 1000,
+        "rarity": "A",
+        "owned": 0,
+        "gear": false
+      },
+      {
+        "slot": 1,
+        "titleRaw": "[General] Tripartite Battle Spinner",
+        "category": "General",
+        "subtype": null,
+        "name": "Tripartite Battle Spinner",
+        "desc": "Activating Chain Attack grants 10% Decibels.",
+        "price": 1000,
+        "rarity": "A",
+        "owned": null,
+        "gear": null
+      },
+      {
+        "slot": 2,
+        "titleRaw": "[General] Bomb Difuser",
+        "category": "General",
+        "subtype": null,
+        "name": "Bomb Difuser",
+        "desc": "Vital View triggered by Evasive Assist lasts 5s longer. Defensive Assist ET. J",
+        "price": 1000,
+        "rarity": "A",
+        "owned": null,
+        "gear": null
+      },
+      {
+        "slot": 3,
+        "titleRaw": "[ General) Secret File",
+        "category": "General",
+        "subtype": null,
+        "name": "Secret File",
+        "desc": "When attacked, quickly press Dodge to immediately break free and",
+        "price": 1000,
+        "rarity": "A",
+        "owned": null,
+        "gear": null
+      },
+      {
+        "slot": 4,
+        "titleRaw": "[General] Tri-End Toy Stethoscope",
+        "category": "General",
+        "subtype": null,
+        "name": "Tri-End Toy Stethoscope",
+        "desc": "Increases Daze inflicted by EX Special Attack by 15%.",
+        "price": 600,
+        "rarity": "B",
+        "owned": null,
+        "gear": null
+      }
+    ]
+  },
+  {
+    "file": "Screenshot 2026-10-02 152753.png",
+    "coins": 3156,
+    "refreshCost": 300,
+    "cards": [
+      {
+        "slot": 0,
+        "titleRaw": "[ Anomaly: Infliction ) Tactical Flashbang",
+        "category": "Anomaly",
+        "subtype": "Infliction",
+        "name": "Tactical Flashbang",
+        "desc": "” Inflicting the q Disorder effect , increases the whole i squad's Anomaly EE wr me",
+        "price": 1000,
+        "rarity": "A",
+        "owned": 0,
+        "gear": false
+      },
+      {
+        "slot": 1,
+        "titleRaw": "ca [Rupture: Activation) Unwavering Resolve",
+        "category": "Rupture",
+        "subtype": "Activation",
+        "name": "Unwavering Resolve",
+        "desc": "CRIT DMG increases by 60% when Agent HP drops below 70%.",
+        "price": 1000,
+        "rarity": "A",
+        "owned": 0,
+        "gear": false
+      },
+      {
+        "slot": 2,
+        "titleRaw": "[General] Sword Catalog",
+        "category": "General",
+        "subtype": null,
+        "name": "Sword Catalog",
+        "desc": "Agents deal 25% more DMG but also take 15% more DMG.",
+        "price": 1000,
+        "rarity": "A",
+        "owned": null,
+        "gear": null
+      },
+      {
+        "slot": 3,
+        "titleRaw": "[ Attack: Eradication] Strike Left and Right",
+        "category": "Attack",
+        "subtype": "Eradication",
+        "name": "Strike Left and Right",
+        "desc": "Increases Agent CRIT Rate by 12%.",
+        "price": 600,
+        "rarity": "B",
+        "owned": 2,
+        "gear": false
+      },
+      {
+        "slot": 4,
+        "titleRaw": "[ Stun: Knock] High-Speed Chainsaw",
+        "category": "Stun",
+        "subtype": "Knock",
+        "name": "High-Speed Chainsaw",
+        "desc": "Increases the duration enemies are stunned by 10%.",
+        "price": 600,
+        "rarity": "B",
+        "owned": 0,
+        "gear": false
+      }
+    ]
+  },
+  {
+    "file": "Screenshot 2026-10-02 152759.png",
+    "coins": 2856,
+    "refreshCost": 300,
+    "cards": [
+      {
+        "slot": 0,
+        "titleRaw": "i [Stun: Knock] Portable Angle Grinder",
+        "category": "Stun",
+        "subtype": "Knock",
+        "name": "Portable Angle Grinder",
+        "desc": "’Jpon stunning an enemy, the whole l , quad recovers 5 l Energy, 6 .- I",
+        "price": 1000,
+        "rarity": "A",
+        "owned": 0,
+        "gear": false
+      },
+      {
+        "slot": 1,
+        "titleRaw": "[$tun: Knock] Multi-Function Circular Saw",
+        "category": "Stun",
+        "subtype": "Knock",
+        "name": "Multi-Function Circular Saw",
+        "desc": "Increases Agent DMG dealt to Stunned enemies by 45%.",
+        "price": 1000,
+        "rarity": "A",
+        "owned": 0,
+        "gear": false
+      },
+      {
+        "slot": 2,
+        "titleRaw": "(Support: Saturation) Nutritional Can Food",
+        "category": "Support",
+        "subtype": "Saturation",
+        "name": "Nutritional Can Food",
+        "desc": "Upon launching an EX Special Attack, tha Agent deals 5% more DMG for 10s, mth alleen HE Ae I",
+        "price": 1000,
+        "rarity": "A",
+        "owned": 0,
+        "gear": false
+      },
+      {
+        "slot": 3,
+        "titleRaw": "[General] Three Glass Marbles",
+        "category": "General",
+        "subtype": null,
+        "name": "Three Glass Marbles",
+        "desc": "Increases the duration that enemies are stunned for by 15%.",
+        "price": 1000,
+        "rarity": "A",
+        "owned": null,
+        "gear": null
+      },
+      {
+        "slot": 4,
+        "titleRaw": "[General] Like & Subscribe Gun",
+        "category": "General",
+        "subtype": null,
+        "name": "Like Subscribe Gun",
+        "desc": "Each non-critical hit increases the Agent's CRIT Rate by 6%. This effect is —n in mide FATE LL",
+        "price": 600,
+        "rarity": "B",
+        "owned": null,
+        "gear": null
+      }
+    ]
+  },
+  {
+    "file": "Screenshot 2026-10-02 152812.png",
+    "coins": 2556,
+    "refreshCost": 300,
+    "cards": [
+      {
+        "slot": 0,
+        "titleRaw": "[Attack: Eradication] Greataxe of Conquest",
+        "category": "Attack",
+        "subtype": "Eradication",
+        "name": "Greataxe of Conquest",
+        "desc": "\"Upon entering g combat, gain 3 , stacks of i Enhancement. Each",
+        "price": 1000,
+        "rarity": "A",
+        "owned": 2,
+        "gear": false
+      },
+      {
+        "slot": 1,
+        "titleRaw": ". [Support Saturation] Lucky 5 Cookie",
+        "category": "Support",
+        "subtype": "Saturation",
+        "name": "Lucky Cookie",
+        "desc": "When an Agent activates Ultimate, the whole squad recovers 17 Energy, _— a. - ——",
+        "price": 1000,
+        "rarity": "A",
+        "owned": 0,
+        "gear": false
+      },
+      {
+        "slot": 2,
+        "titleRaw": "[8tun: Knock] Industrial Explosive",
+        "category": "Attack",
+        "subtype": null,
+        "name": "[8tun: Knock] Industrial Explosive",
+        "desc": "Agents inflict 10% more Daze.",
+        "price": 600,
+        "rarity": "B",
+        "owned": 0,
+        "gear": false
+      },
+      {
+        "slot": 3,
+        "titleRaw": "[Anomaly: Infliction] High-Voltage $tun Gun",
+        "category": "Anomaly",
+        "subtype": "Infliction",
+        "name": "High-Voltage Stun Gun",
+        "desc": "Increases Agent Anomaly Proficiency by 45.",
+        "price": 600,
+        "rarity": "B",
+        "owned": 0,
+        "gear": false
+      },
+      {
+        "slot": 4,
+        "titleRaw": "[Dafense: Battle Shield] Lightweight Bulletproof Armor",
+        "category": "Defense",
+        "subtype": "Battle Shield",
+        "name": "Lightweight Bulletproof Armor",
+        "desc": "When triggering Perfect Dodge, the Agent gains a shield equal to 3% of HP. BL APE em nn",
+        "price": 600,
+        "rarity": "B",
+        "owned": 5,
+        "gear": true
+      }
+    ]
+  },
+  {
+    "file": "Screenshot 2026-10-02 152823.png",
+    "coins": 2256,
+    "refreshCost": 300,
+    "cards": [
+      {
+        "slot": 0,
+        "titleRaw": "[General] Energy Restorer MKI hp",
+        "category": "General",
+        "subtype": null,
+        "name": "Energy Restorer MKI hp",
+        "desc": "\"When triggering Chain Attack, y Agents recover 5 Energy.",
+        "price": 1000,
+        "rarity": "A",
+        "owned": null,
+        "gear": null
+      },
+      {
+        "slot": 1,
+        "titleRaw": "[ Attack: Eradication] Cutting Gale",
+        "category": "Attack",
+        "subtype": "Eradication",
+        "name": "Cutting Gale",
+        "desc": "Increases Agent ATK by 270.",
+        "price": 600,
+        "rarity": "B",
+        "owned": 2,
+        "gear": false
+      },
+      {
+        "slot": 2,
+        "titleRaw": "d [Stun: Knock] High-Speed Chainsaw",
+        "category": "Stun",
+        "subtype": "Knock",
+        "name": "High-Speed Chainsaw",
+        "desc": "Increases the duration enemies are stunned by 10%.",
+        "price": 600,
+        "rarity": "B",
+        "owned": 0,
+        "gear": false
+      },
+      {
+        "slot": 3,
+        "titleRaw": "28 [#tun: Knock] Power Impact Drill",
+        "category": "Attack",
+        "subtype": null,
+        "name": "28 [#tun: Knock] Power Impact Drill",
+        "desc": "Upon Stun recovery, the enemy accumulates 10% Daze.",
+        "price": 600,
+        "rarity": "B",
+        "owned": 0,
+        "gear": false
+      },
+      {
+        "slot": 4,
+        "titleRaw": "[Rupture: Activation] Champion's Proof",
+        "category": "Rupture",
+        "subtype": "Activation",
+        "name": "Champion's Proof",
+        "desc": "Increases Agent Max HP by 25%.",
+        "price": 600,
+        "rarity": "B",
+        "owned": 0,
+        "gear": false
+      }
+    ]
+  },
+  {
+    "file": "Screenshot 2026-10-02 152832.png",
+    "coins": 1956,
+    "refreshCost": 300,
+    "cards": [
+      {
+        "slot": 0,
+        "titleRaw": "[Support: Saturation] Energy Drink",
+        "category": "Support",
+        "subtype": "Saturation",
+        "name": "Energy Drink",
+        "desc": "\"EX Special Attack q DMG increases by , 44%, and Ultimate i DMG increases by",
+        "price": 1000,
+        "rarity": "A",
+        "owned": 0,
+        "gear": false
+      },
+      {
+        "slot": 1,
+        "titleRaw": "[Attack: Eradication] Strike Left and Right",
+        "category": "Attack",
+        "subtype": "Eradication",
+        "name": "Strike Left and Right",
+        "desc": "Increases Agent CRIT Rate by 12%.",
+        "price": 600,
+        "rarity": "B",
+        "owned": 2,
+        "gear": false
+      },
+      {
+        "slot": 2,
+        "titleRaw": "[ Anomaly: Infliction] Nat Launcher",
+        "category": "Anomaly",
+        "subtype": "Infliction",
+        "name": "Nat Launcher",
+        "desc": "increases Agent Anomaly Mastery by 60.",
+        "price": 600,
+        "rarity": "B",
+        "owned": 0,
+        "gear": false
+      },
+      {
+        "slot": 3,
+        "titleRaw": "[$upport: Saturation] Starlight Lollipop",
+        "category": "Support",
+        "subtype": "Saturation",
+        "name": "Starlight Lollipop",
+        "desc": "Increases Decibel Generation Rate by 23%.",
+        "price": 600,
+        "rarity": "B",
+        "owned": 0,
+        "gear": false
+      },
+      {
+        "slot": 4,
+        "titleRaw": "(Support: Saturation] Quick-Heat Hot Pot",
+        "category": "Support",
+        "subtype": "Saturation",
+        "name": "Quick-Heat Hot Pot",
+        "desc": "Energy, Adrenaline, and Sharpness Generation Rate increase by 18%.",
+        "price": 600,
+        "rarity": "B",
+        "owned": 0,
+        "gear": false
+      }
+    ]
+  },
+  {
+    "file": "Screenshot 2026-10-02 152842.png",
+    "coins": 1656,
+    "refreshCost": 300,
+    "cards": [
+      {
+        "slot": 0,
+        "titleRaw": "(Rupture: Activation] Offense-Defense Balance",
+        "category": "Rupture",
+        "subtype": "Activation",
+        "name": "Offense-Defense Balance",
+        "desc": "\"When launching EX d Special Attack, the , whole squad i restores 4% HP. This mF om mle mem PR mm mm",
+        "price": 1000,
+        "rarity": "A",
+        "owned": 0,
+        "gear": false
+      },
+      {
+        "slot": 1,
+        "titleRaw": "[ General] Bubble Gun",
+        "category": "General",
+        "subtype": null,
+        "name": "Bubble Gun",
+        "desc": "Landing a critical hit increases Daze inflicted by the Agent by 15% for 3s.",
+        "price": 1000,
+        "rarity": "A",
+        "owned": null,
+        "gear": null
+      },
+      {
+        "slot": 2,
+        "titleRaw": "[General] Tripartite Bottle Spinner",
+        "category": "General",
+        "subtype": null,
+        "name": "Tripartite Bottle Spinner",
+        "desc": "Activating Chain Attack grants 10% Decibels. 1",
+        "price": 1000,
+        "rarity": "A",
+        "owned": null,
+        "gear": null
+      },
+      {
+        "slot": 3,
+        "titleRaw": "[General] Sword Catalog",
+        "category": "General",
+        "subtype": null,
+        "name": "Sword Catalog",
+        "desc": "Agents deal 25% more DMG but also take 15% more DMG. 2",
+        "price": 1000,
+        "rarity": "A",
+        "owned": null,
+        "gear": null
+      },
+      {
+        "slot": 4,
+        "titleRaw": "[General] Insect Catalog",
+        "category": "General",
+        "subtype": null,
+        "name": "Insect Catalog",
+        "desc": "Attacks against enemies with less than 50% HP deal 15% more DMG.",
+        "price": 600,
+        "rarity": "B",
+        "owned": null,
+        "gear": null
+      }
+    ]
+  },
+  {
+    "file": "Screenshot 2026-10-02 152850.png",
+    "coins": 1356,
+    "refreshCost": 300,
+    "cards": [
+      {
+        "slot": 0,
+        "titleRaw": "[ General] Lucky Stars hp",
+        "category": "General",
+        "subtype": null,
+        "name": "Lucky Stars hp",
+        "desc": "\"Launching an EX i Special Attack , increases the + Agent's DMG by 5% Fame \"Pn nd ml fan ca bor",
+        "price": 1000,
+        "rarity": "A",
+        "owned": null,
+        "gear": null
+      },
+      {
+        "slot": 1,
+        "titleRaw": "[Support: Saturation] Sugar-Free Chocolate",
+        "category": "Support",
+        "subtype": "Saturation",
+        "name": "Sugar-Free Chocolate",
+        "desc": "Increases Agent DMG dealt by 15%.",
+        "price": 600,
+        "rarity": "B",
+        "owned": 0,
+        "gear": false
+      },
+      {
+        "slot": 2,
+        "titleRaw": "[Rupturs: Activation] Locked and Loaded",
+        "category": "Stun",
+        "subtype": "Activation",
+        "name": "Locked and Loaded",
+        "desc": "When HP is lost, Rupture Agents’ Sheer Force increases by 270 ET l PER, I",
+        "price": 600,
+        "rarity": "B",
+        "owned": 0,
+        "gear": false
+      },
+      {
+        "slot": 3,
+        "titleRaw": "[General] Energy Restorer MKII",
+        "category": "General",
+        "subtype": null,
+        "name": "Energy Restorer MKII",
+        "desc": "EX Special Attack - DMG increases by 15% and Daze “inflicted increases SE —",
+        "price": 600,
+        "rarity": "B",
+        "owned": null,
+        "gear": null
+      },
+      {
+        "slot": 4,
+        "titleRaw": "[ General] Untitled Book",
+        "category": "General",
+        "subtype": null,
+        "name": "Untitled Book",
+        "desc": "Dodge Counter DMG + increases by 30% and Daze inflicted \" increases by 15%.",
+        "price": 600,
+        "rarity": "B",
+        "owned": null,
+        "gear": null
+      }
+    ]
+  },
+  {
+    "file": "Screenshot 2026-10-02 152858.png",
+    "coins": 1056,
+    "refreshCost": 300,
+    "cards": [
+      {
+        "slot": 0,
+        "titleRaw": "[ $tun: Knock] Mini Handsaw hp",
+        "category": "Stun",
+        "subtype": "Knock",
+        "name": "Mini Handsaw hp",
+        "desc": "\"Upon stunning an q enemy, that enemy's y Stun DMG Multiplier l increases by 37.5%.",
+        "price": 1000,
+        "rarity": "A",
+        "owned": 0,
+        "gear": false
+      },
+      {
+        "slot": 1,
+        "titleRaw": "[ Anomaly: Infliction] Tactical Flashbang",
+        "category": "Anomaly",
+        "subtype": "Infliction",
+        "name": "Tactical Flashbang",
+        "desc": "inflicting the Disorder effect increases the whole squad's Anomaly -— EERE a",
+        "price": 1000,
+        "rarity": "A",
+        "owned": 0,
+        "gear": false
+      },
+      {
+        "slot": 2,
+        "titleRaw": "[Anomaly: Infliction l Heavy Flamethrower",
+        "category": "Anomaly",
+        "subtype": null,
+        "name": "[Anomaly: Infliction Heavy Flamethrower",
+        "desc": "Agent's Anomaly PEN Ratio increases by 20% when attacking an anemy suffering PENNER RCN l EE.",
+        "price": 1000,
+        "rarity": "A",
+        "owned": 0,
+        "gear": false
+      },
+      {
+        "slot": 3,
+        "titleRaw": "[Anomaly: Infliction] High-Strength Pepper Spray",
+        "category": "Anomaly",
+        "subtype": "Infliction",
+        "name": "High-Strength Pepper Spray",
+        "desc": "When an Attribute Anomaly is triggered, the whole squad either —ge—",
+        "price": 1000,
+        "rarity": "A",
+        "owned": 0,
+        "gear": false
+      },
+      {
+        "slot": 4,
+        "titleRaw": "[General] Ultra Sacred Sword of Radiance",
+        "category": "General",
+        "subtype": null,
+        "name": "Ultra Sacred Sword of Radiance",
+        "desc": "Shielded Agents deal 30% more DMG to enemies within 6m.",
+        "price": 1000,
+        "rarity": "A",
+        "owned": null,
+        "gear": null
+      }
+    ]
+  },
+  {
+    "file": "Screenshot 2026-10-02 152906.png",
+    "coins": 756,
+    "refreshCost": 300,
+    "cards": [
+      {
+        "slot": 0,
+        "titleRaw": "MN (Rupture: Activation] Unwavering Resolve",
+        "category": "Rupture",
+        "subtype": "Activation",
+        "name": "Unwavering Resolve",
+        "desc": "4 CRIT DMG increases J by 60% when Agent HP drops below 70%.",
+        "price": 1000,
+        "rarity": "A",
+        "owned": 0,
+        "gear": false
+      },
+      {
+        "slot": 1,
+        "titleRaw": "i [Rupture: Activation] Heavy Hitter",
+        "category": "Rupture",
+        "subtype": "Activation",
+        "name": "Heavy Hitter",
+        "desc": "DMG increases by 37.5% when Agent HP drops below 70%.",
+        "price": 1000,
+        "rarity": "A",
+        "owned": 0,
+        "gear": false
+      },
+      {
+        "slot": 2,
+        "titleRaw": "[General] Demolition Hammer",
+        "category": "General",
+        "subtype": null,
+        "name": "Demolition Hammer",
+        "desc": "Triggering a Perfect Assist increases all 5 squad members’ Anomaly Buildup - - En APY",
+        "price": 1000,
+        "rarity": "A",
+        "owned": null,
+        "gear": null
+      },
+      {
+        "slot": 3,
+        "titleRaw": "[Anomaly: Infliction ] EMI Jammer",
+        "category": "Anomaly",
+        "subtype": "Infliction",
+        "name": "EMI Jammer",
+        "desc": "Agent Attribute Anomaly DMG and Disorder DMG increase by 18%.",
+        "price": 600,
+        "rarity": "B",
+        "owned": 0,
+        "gear": false
+      },
+      {
+        "slot": 4,
+        "titleRaw": "[ General] Hammer Drill",
+        "category": "General",
+        "subtype": null,
+        "name": "Hammer Drill",
+        "desc": "Triggering Perfect Assist increases all : squad members’ CRIT DMG by 20% for Fr. ym. --",
+        "price": 600,
+        "rarity": "B",
+        "owned": null,
+        "gear": null
+      }
+    ]
+  },
+  {
+    "file": "Screenshot 2026-10-02 152914.png",
+    "coins": 456,
+    "refreshCost": 300,
+    "cards": [
+      {
+        "slot": 0,
+        "titleRaw": "[ Attack: Eradication ] Total Eradication",
+        "category": "Attack",
+        "subtype": "Eradication",
+        "name": "Total Eradication",
+        "desc": "4 d Agents ignore 20% of y enemy DEF.",
+        "price": 1000,
+        "rarity": "A",
+        "owned": 2,
+        "gear": false
+      },
+      {
+        "slot": 1,
+        "titleRaw": "[General] Water Gun",
+        "category": "General",
+        "subtype": null,
+        "name": "Water Gun",
+        "desc": "Landing a critical hit increases the Agent's CRIT DMG by 3% for 10s, stacking arms a 4% LIE ~~",
+        "price": 1000,
+        "rarity": "A",
+        "owned": null,
+        "gear": null
+      },
+      {
+        "slot": 2,
+        "titleRaw": "[General] Falling Storsea Armor",
+        "category": "General",
+        "subtype": null,
+        "name": "Falling Storsea Armor",
+        "desc": "Hitting an enamy with an EX Special Attack generates a Shield equal to 10%",
+        "price": 1000,
+        "rarity": "A",
+        "owned": null,
+        "gear": null
+      },
+      {
+        "slot": 3,
+        "titleRaw": "[General] Plant Catalog",
+        "category": "General",
+        "subtype": null,
+        "name": "Plant Catalog",
+        "desc": "Off-fleld Agents with 25% or lower HP slowly recover HP.",
+        "price": 1000,
+        "rarity": "A",
+        "owned": null,
+        "gear": null
+      },
+      {
+        "slot": 4,
+        "titleRaw": "[ General] BUG Shield",
+        "category": "General",
+        "subtype": null,
+        "name": "BUG Shield",
+        "desc": "When attacked, if tha Agent's HP is below 25%, a shield that is equal to 15% PE A",
+        "price": 600,
+        "rarity": "B",
+        "owned": null,
+        "gear": null
+      }
+    ]
+  },
+  {
+    "file": "Screenshot 2026-10-02 152922.png",
+    "coins": 156,
+    "refreshCost": 300,
+    "cards": [
+      {
+        "slot": 0,
+        "titleRaw": "[General] Bomb Difuser hp",
+        "category": "General",
+        "subtype": null,
+        "name": "Bomb Difuser hp",
+        "desc": "\"Vital View triggered by Evasive Assist , lasts 5s longer. i Defansive Assist EN",
+        "price": 1000,
+        "rarity": "A",
+        "owned": null,
+        "gear": null
+      },
+      {
+        "slot": 1,
+        "titleRaw": "[ General] Secret File",
+        "category": "General",
+        "subtype": null,
+        "name": "Secret File",
+        "desc": "When attacked, quickly press Dodge to immediately i break free and",
+        "price": 1000,
+        "rarity": "A",
+        "owned": null,
+        "gear": null
+      },
+      {
+        "slot": 2,
+        "titleRaw": "[ General] General File",
+        "category": "General",
+        "subtype": null,
+        "name": "General File",
+        "desc": "Perfect Dodge is easier to trigger, and Dodge Counter i DMG is increased by a— -—",
+        "price": 1000,
+        "rarity": "A",
+        "owned": null,
+        "gear": null
+      },
+      {
+        "slot": 3,
+        "titleRaw": ": [Rupture: Activation ] Light of Foot",
+        "category": "Rupture",
+        "subtype": "Activation",
+        "name": "Light of Foot",
+        "desc": "Increases Agent CRIT DMG by 30% for 20s when losing HP. Repeated triggers ee wn de ale aE Yn ma",
+        "price": 600,
+        "rarity": "B",
+        "owned": 0,
+        "gear": false
+      },
+      {
+        "slot": 4,
+        "titleRaw": "[General] Tri-End Toy Stethoscope",
+        "category": "General",
+        "subtype": null,
+        "name": "Tri-End Toy Stethoscope",
+        "desc": "Increases Daze inflicted by EX Special Attack by i 15%.",
+        "price": 600,
+        "rarity": "B",
+        "owned": null,
+        "gear": null
+      }
+    ]
+  }
+]

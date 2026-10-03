@@ -1,0 +1,2 @@
+# Hand-edited, one card per line; layout is owned by `npm run db:format`.
+src/resonia-db.js
